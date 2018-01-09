@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+<title>测测你的致命弱点？</title>
+<link type="text/css" rel="stylesheet" href="style/css/frozen.css" tppabs="http://www.o6n9nd.cn/hd/32ruodian/style/css/frozen.css">
+<link type="text/css" rel="stylesheet" href="style/small_test.css" tppabs="http://www.o6n9nd.cn/hd/32ruodian/style/small_test.css" >
+<script src="style/init_rem.js" tppabs="http://www.o6n9nd.cn/hd/32ruodian/style/init_rem.js" ></script>
+    <script type="text/javascript" src="lib/jquery-1.12.4/jquery1.12.4.min.js"></script>
+<script type="text/javascript" src="style/myqrcode.js" tppabs="http://www.o6n9nd.cn/hd/32ruodian/style/myqrcode.js"></script>
+<!-- <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> -->
+<style>
+.follow{font-size:20px;line-height:30px;color:#fff;text-align:center;padding-top:30%;z-index:2000;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.9);display:none;}
+.follow span{font-size:40px;position:absolute;top:10px;left:10px;}
+.follow img{width:180px;margin-top:10px;}
+.ui-btn-primary:before { border:none; }
+.com-tip{color:red;width:100%;position:fixed;text-align:center;bottom:0;left:0;padding:16px 0 12px;color:#fff;background:rgba(0,0,0,.7)}
+.com-tip a{color:#fff;}
+</style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "../../../hm.baidu.com/hm.js-4788ca9e4dec61f0d58a6e3ca307daf8"/*tpa=https://hm.baidu.com/hm.js?4788ca9e4dec61f0d58a6e3ca307daf8*/;
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    <script type="text/javascript" >
+        $(function () {
+            var x = parseInt(Math.random()*(2)+1);
+            $("#queding").click(function () {
+                if($("#name").val()=="杨宇通" && $(":radio:checked").val()=="1"){
+                    $("#loadimg").attr("src","lib/images/yang"+x+".jpg");
+                }else if($("#name").val()=="方俊亚" && $(":radio:checked").val()=="2") {
+                    $("#loadimg").attr("src","lib/images/fang"+x+".jpg");
+                }else if ($("#name").val()=="杨宇通" && $(":radio:checked").val()=="2"){
+                    alert("我才不是女生啊喂！！！")
+                }else if ($("#name").val()=="方俊亚" && $(":radio:checked").val()=="1"){
+                    alert("方方你可可不是男生哦~")
+                }else if ($("#name").val()==""){
+                    alert("你倒是输上名字呀。。。");
+                }else {
+                    alert("就只能咱两个，其他人才不让他用！");
+                }
+            });
+            $("#queding").click(function () {
+                $("#header").html("长按下方图片保存哦~~");
+            });
+
+        });
+
+    </script>
+
+</head>
+<body ontouchstart="">
+<input id="text" type="hidden" value="http://vugzr.by949p.cn/hd/32ruodian/index.php" style="width:80%" /><br />
+<div id="qrcode" style="width:100px; height:100px; margin-top:15px;display:none"></div>   
+<header class="ui-header ui-header-positive ui-border-b" style="background:#252c3f;font-weight:border">
+    <h1 id="header">你的致命弱点</h1>
+</header>
+<section class="ui-container" id="frm">
+    <img id="loadimg" src="lib/images/load.jpg" width="50%" style="margin:40px 25%">
+    <div class="ui-form ui-border-t">
+        <div class="ui-form-item ui-border-b">
+            <label>姓名</label>
+            <input type="text" id="name" name="name" maxlength="4" placeholder="请输入姓名">
+        </div>
+        <div class="ui-form-item ui-form-item-radio ui-border-b">
+            <label style="margin-left:-1px;">性别</label>          
+            <label class="ui-radio" style="padding-left:90px;">
+                <input type="radio" name="sex" value="1" >
+            </label>
+            <p>男</p>
+            <label class="ui-radio" >
+                <input type="radio" name="sex" checked value="2" >
+            </label>
+            <p>女</p>
+        </div>
+        <div class="ui-btn-wrap">
+            <button class="ui-btn-lg ui-btn-primary btn" style="background:#252c3f;border:1px solid #252c3f" id="queding">确定</button>
+        </div>
+    </div>
+</section>
+</body>
+</html>
