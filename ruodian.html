@@ -12,9 +12,9 @@
         $(function () {
             var x = parseInt(Math.random()*(2)+1);    ;
             $("#queding").click(function () {
-
                 if($("#name").val()=="杨宇通" && $(":radio:checked").val()=="1"){
                     $("#loadimg").attr("src","lib/images/yang"+x+".jpg");
+                    alert("通通");
                 }else if($("#name").val()=="方俊亚" && $(":radio:checked").val()=="2") {
                     $("#loadimg").attr("src","lib/images/fang"+x+".jpg");
                 }else if ($("#name").val()=="杨宇通" && $(":radio:checked").val()=="2"){
@@ -37,9 +37,15 @@
     </script>
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
 <header class="ui-header ui-header-positive ui-border-b" style="background:#252c3f;">
     <h1 id="header">你的致命弱点</h1>
 </header>
+        </div>
+    </div>
+    <div class="row">
 <section class="ui-container" id="frm">
     <img src="lib/images/load.jpg" style="margin:40px 25%" width="50%" id="loadimg">
     <img src="">
@@ -64,7 +70,8 @@
         </div>
     </div>
 </section>
-
+    </div>
+</div>
 
 
 </body>
